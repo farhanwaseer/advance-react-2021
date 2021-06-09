@@ -7,11 +7,11 @@ const UseStateBasics = () => {
      setText("Hello world")
    }
   return (
-<div>
+<React.Fragment>
 <h2> {text}</h2>
  <button className="btn" onClick={handler}>change Text</button>
  
-  </div>
+  </React.Fragment>
   )
 };
 
