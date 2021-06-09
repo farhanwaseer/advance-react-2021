@@ -12,7 +12,7 @@ const UseStateBasics = () => {
   };
   return (
     <React.Fragment>
-      <h2> {text}</h2>
+      <h1> {text}</h1>
       <button className="btn" onClick={handler}>
         change Text
       </button>
