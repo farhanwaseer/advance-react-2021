@@ -3,7 +3,12 @@ import React, { useState } from "react";
 const UseStateBasics = () => {
   const [text, setText] = useState("Random text");
   const handler = () => {
-    setText("Hello world");
+    if(text === "Random text"){
+      setText("Hello world");
+    }else{
+      setText("Random text")
+    }
+   
   };
   return (
     <React.Fragment>
