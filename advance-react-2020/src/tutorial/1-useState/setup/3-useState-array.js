@@ -9,7 +9,7 @@ const UseStateArray = () => {
      let newPeople = people.filter((person) => person.id !== id);
      setPeople(newPeople);
    }
-
+    
   return <>
    {
      people.map((person) => {
