@@ -9,8 +9,13 @@ const UseStateArray = () => {
    {
      people.map((person) => {
       console.log(person) 
-      
-      return "Hello";
+      const {id, name} = person;
+
+      return (
+        <div key={id} className="item">
+          <h3>{name}</h3>
+        </div>
+      );
      })
    }
     
