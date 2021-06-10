@@ -10,7 +10,7 @@ const UseStateArray = () => {
      setPeople(newPeople);
    }
     
-  return <>
+  return <>  
    {
      people.map((person) => {
       console.log(person) 
