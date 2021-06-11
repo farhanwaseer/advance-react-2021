@@ -23,10 +23,10 @@ const UseStateCounter = () => {
       </section>
 
       <section style={{ margin: "4rem 0" }}>
-        <h2>useState counter example</h2>
+        <h2>complex counter example</h2>
         <h1>{count}</h1>
         <button className="btn" onClick={() => setCount(count + 1)}>
-          Increase
+          Increase later
         </button>
         
       </section>
