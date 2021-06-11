@@ -6,6 +6,12 @@ const UseStateCounter = () => {
     setCount(0);
   };
 
+const complexIncrease = () => {
+  setTimeout(()=> {
+    setCount(count +1);
+  },2000)
+}
+   
   return (
     <>
       <section style={{ margin: "4rem 0" }}>
@@ -22,7 +28,7 @@ const UseStateCounter = () => {
         </button>
       </section>
 
-     {/* COMPLEX INCRESE */}
+     
      
      
       <section style={{ margin: "4rem 0" }}>
