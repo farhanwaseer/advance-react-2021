@@ -9,7 +9,7 @@ const UseEffectBasics = () => {
   return <>
   useEffect Basics
   <h1>{value}</h1>
-  <button className="btn" >Counter</button>
+  <button className="btn" onClick={()=> setValue(value + 1)}>Counter</button>
   </>;
 };
 
