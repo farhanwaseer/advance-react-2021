@@ -7,7 +7,7 @@ const UseEffectBasics = () => {
   useEffect(() => {
       console.log("call USeEffect")
   });
- console.log("rerender")
+ console.log("render component" )
   return <>
   useEffect Basics
   <h1>{value}</h1>
