@@ -3,7 +3,14 @@ import React, { useState, useEffect } from 'react';
 // cleanup function
 // second parameter
 const UseEffectBasics = () => {
-  return <h2>useEffect Basics</h2>;
+  const [value, setValue] = useState(0);
+
+
+  return <>
+  useEffect Basics
+  <h1>{value}</h1>
+  <button className="btn" >Counter</button>
+  </>;
 };
 
 export default UseEffectBasics;
