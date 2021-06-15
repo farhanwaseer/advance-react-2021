@@ -7,12 +7,14 @@ const UseEffectCleanup = () => {
    const [size, setSize] = useState(window.innerWidth);
    console.log(size)
 
-  return <>
+  return (
+    <>
   useEffect cleanup
   <h1>window</h1>
   <h2>{size} px</h2>
   
-  </>;
+  </>
+  );
 };
 
 export default UseEffectCleanup;
