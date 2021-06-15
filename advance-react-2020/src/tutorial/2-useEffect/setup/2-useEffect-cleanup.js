@@ -10,7 +10,7 @@ const UseEffectCleanup = () => {
   return <>
   useEffect cleanup
   <h1>window</h1>
-  <h2></h2>
+  <h2>{size}</h2>
   
   </>;
 };
