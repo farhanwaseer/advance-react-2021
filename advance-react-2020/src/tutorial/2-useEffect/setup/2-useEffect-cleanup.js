@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 const UseEffectCleanup = () => {
    const [size, setSize] = useState(window.innerWidth);
-   console.log(size)
+   console.log(size);
 
   return (
     <>
