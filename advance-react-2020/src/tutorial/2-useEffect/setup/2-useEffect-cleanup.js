@@ -7,6 +7,10 @@ const UseEffectCleanup = () => {
    const [size, setSize] = useState(window.innerWidth);
    console.log(size);
 
+   useEffect(()=> {
+     window.addEventListener('resize', checkSize);
+   });
+
   return (
     <>
   useEffect cleanup
