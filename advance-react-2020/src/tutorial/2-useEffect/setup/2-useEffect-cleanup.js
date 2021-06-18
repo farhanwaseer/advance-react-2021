@@ -25,4 +25,4 @@ const UseEffectCleanup = () => {
   );
 };
 
-export default UseEffectCleanup;
+export default UseEffectCleanup
