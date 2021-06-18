@@ -8,12 +8,13 @@ const UseEffectFetchData = () => {
 
   const getUsers =  async () => {
     const response = await fatch(url);
-    
+    const users = await response.json;
+    console.log(users);
   }
 
   useEffect(() => {
-   
-  })
+   getUsers();
+  });
 
   return (
     <>
