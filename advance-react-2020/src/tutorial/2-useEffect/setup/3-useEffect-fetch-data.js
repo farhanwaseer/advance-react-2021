@@ -6,6 +6,11 @@ const UseEffectFetchData = () => {
 
   const [users, setUsers] = useState([]);
 
+  const getUsers =  async () => {
+    const response = await fatch(url);
+    
+  }
+
   useEffect(() => {
    
   })
