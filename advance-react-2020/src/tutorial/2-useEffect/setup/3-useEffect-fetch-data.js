@@ -6,6 +6,9 @@ const UseEffectFetchData = () => {
 
   const [users, setUsers] = useState([]);
 
+  useEffect(() => {
+   
+  })
 
   return (
     <>
