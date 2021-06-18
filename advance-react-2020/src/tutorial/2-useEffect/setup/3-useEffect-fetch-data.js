@@ -7,7 +7,11 @@ const UseEffectFetchData = () => {
   const [users, setUsers] = useState([]);
 
 
-  return <h2>fetch data</h2>;
+  return (
+    <>
+    <h2>fetch data</h2>
+    </>
+  );
 };
 
 export default UseEffectFetchData;
