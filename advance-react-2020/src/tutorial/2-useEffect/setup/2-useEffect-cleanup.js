@@ -22,7 +22,7 @@ const UseEffectCleanup = () => {
   <h2>{size} px</h2>
   
   </>
-  );
+  )
 };
 
 export default UseEffectCleanup;
