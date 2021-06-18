@@ -1,26 +1,23 @@
-import React, { useState, useEffect, fatch } from 'react';
+import React, { useState, useEffect, fatch } from "react";
 
-const url = 'https://api.github.com/users';
+const url = "https://api.github.com/users";
 
 const UseEffectFetchData = () => {
-
   const [users, setUsers] = useState([]);
 
-  const getUsers =  async () => {
+  const getUsers = async () => {
     const response = await fetch(url);
     const users = await response.json;
     console.log(users);
-  }
-
-
+  };
 
   useEffect(() => {
-   getUsers();
+    getUsers();
   });
 
   return (
     <>
-    <h3>Github users</h3>
+      <h3>Github users</h3>
     </>
   );
 };
