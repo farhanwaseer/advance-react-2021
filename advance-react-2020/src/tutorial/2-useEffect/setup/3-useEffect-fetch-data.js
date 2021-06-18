@@ -9,7 +9,7 @@ const UseEffectFetchData = () => {
 
   return (
     <>
-    <h2>fetch data</h2>
+    <h3>Github users</h3>
     </>
   );
 };
