@@ -34,7 +34,7 @@ const UseEffectFetchData = () => {
   })}
 </ul>
     </>
-  );
+  )
 };
 
 export default UseEffectFetchData;
