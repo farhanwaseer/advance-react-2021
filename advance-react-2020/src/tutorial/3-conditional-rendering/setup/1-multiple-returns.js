@@ -6,13 +6,13 @@ const MultipleReturns = () => {
  const [user, setUser] = useState("default user");
 
   if(loading){
-    return <div><h2>Loading...</h2></div>
+    return <div><h2>Loading...</h2></div>;
 
   }
   if(isError){
     return <div>
       <h2>Error...</h2>
-    </div>
+    </div>;
   }
   return <div>
     <h1>{user}</h1>
