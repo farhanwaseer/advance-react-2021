@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const url = "https://api.github.com/users/QuincyLars,on";
+const url = "https://api.github.com/users/QuincyLarson";
 const MultipleReturns = () => {
   const [loading, setLoading] = useState(true);
   const [isError, setIsError] = useState(false);
