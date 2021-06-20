@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 const url = 'https://api.github.com/users/QuincyLarson';
 const MultipleReturns = () => {
  const [loading,setLoading] = useState(false);
+ const [isError, setIsError] = useState(true);
+ 
 
   if(loading){
     return <h2>Loading...</h2>
