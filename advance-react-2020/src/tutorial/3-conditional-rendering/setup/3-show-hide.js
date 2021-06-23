@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const ShowHide = () => {
-  return <h2>show/hide</h2>;
+  const [show, setShow] = useState(false);  
+  
+  return <>
+  <button className='btn' onClick={()=> setShow(!show)}>hide/show</button>
+  </>
 };
 
+const Item = () => {
+  return <div style={{marginTop: '2rem'}}>
+    <h1>Window</h1>
+    <h2>Size: </h2>
+  </div>
+}
 export default ShowHide;
