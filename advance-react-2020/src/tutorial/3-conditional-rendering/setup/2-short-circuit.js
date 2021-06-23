@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const ShortCircuit = () => {
   // const firstValue = text || 'hello world';
-  // const secondValue = text && 'hello world';
+  const secondValue = text && 'hello world';
 
   return <h2>short circuit</h2>;
 };
