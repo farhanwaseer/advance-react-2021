@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // short-circuit evaluation
-ternary operator
+// ternary operator
 
 const ShortCircuit = () => {
   const firstValue = text || 'hello world';
