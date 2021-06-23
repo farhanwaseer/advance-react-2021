@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-short-circuit evaluation
+// short-circuit evaluation
 ternary operator
 
 const ShortCircuit = () => {
