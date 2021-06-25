@@ -12,13 +12,23 @@ const ControlledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    if(firstName && email) {
+      const person = {firstName, email};
+      setPeople((people) =>{
+        return [...people, person];
+      });
+      setFirstName('');
+      setEmail('');
+      console.log(person)
+    } else{
+      console.log('empty values');
+    }   
   };
   return (
     <>
       <h1>Form</h1>
       <article>
-        <form className="form" onClick={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="firstName">Name :</label>
             <input
