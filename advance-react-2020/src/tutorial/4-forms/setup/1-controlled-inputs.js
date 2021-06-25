@@ -12,16 +12,7 @@ const ControlledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstName && email) {
-      const person = {id: new Date().getTime().toString(), firstName, email}
-      setPeople((people) => {
-        return [...people, person];
-      });
-      setFirstName('');
-      setEmail('');
-    }else{
-      console.log('empty value')
-    }    
+    
   };
   return (
     <>
@@ -46,15 +37,7 @@ const ControlledInputs = () => {
           <button type="submit">add person</button>
         </form>
       </article>
-      {
-        people.map((person, index)=> {
-          const {id, firstName, email} = person;
-          return <div className='item' key={id}>
-<h4>{firstName}</h4>
-<p>{email}</p>
-          </div>
-        })
-      }
+     
     </>
   );
 };
