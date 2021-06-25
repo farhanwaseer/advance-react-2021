@@ -9,8 +9,8 @@ const ControlledInputs = () => {
   return (
     <>
 <article>
-  <form >
-    <div></div>
+  <form className='form'>
+    <div className='form-control'></div>
   </form>
 </article>
     </>
