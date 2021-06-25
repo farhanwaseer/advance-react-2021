@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 const ControlledInputs = () => {
   return (
     <>
+    <h1>Form</h1>
 <article>
   <form className='form'>
     <div className='form-control'>
@@ -18,6 +19,7 @@ const ControlledInputs = () => {
       <label htmlFor="email">Email :</label>
       <input type="text" name="email" id="email" />
     </div>
+    <button type='submit'>add person</button>
   </form>
 </article>
     </>
