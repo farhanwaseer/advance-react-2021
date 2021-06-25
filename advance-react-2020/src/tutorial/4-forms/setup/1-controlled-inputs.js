@@ -25,11 +25,13 @@ const ControlledInputs = () => {
               name="firstName"
               id="firstName"
               value={firstName}
+              onChange={(e)=> setFirstName(e.target.value)}
             />
           </div>
           <div className="form-control">
             <label htmlFor="email">Email :</label>
-            <input type="text" name="email" id="email" />
+            <input type="text" name="email" id="email" value={email}
+              onChange={(e)=> setEmail(e.target.value)} />
           </div>
           <button type="submit">add person</button>
         </form>
