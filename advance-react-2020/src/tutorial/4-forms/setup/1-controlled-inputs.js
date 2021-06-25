@@ -7,7 +7,13 @@ import React, { useState } from 'react';
 
 const ControlledInputs = () => {
   return (
-    <></>
+    <>
+<article>
+  <form >
+    <div></div>
+  </form>
+</article>
+    </>
   )
 };
 
