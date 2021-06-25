@@ -7,7 +7,7 @@ const ShowHide = () => {
   <button className='btn' onClick={()=> setShow(!show)}>hide/show</button>
   {show && <Item/>}
   </>
-}
+};
 
 const Item = () => {
   const [size, setSize] = useState(window.innerWidth);
