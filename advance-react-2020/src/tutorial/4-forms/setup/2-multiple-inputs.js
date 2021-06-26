@@ -7,25 +7,13 @@ import React, { useState } from 'react';
 // dynamic object keys
 
 const ControlledInputs = () => {
-  const [firstName, setFirstName] = useState('');
-  const [email, setEmail] = useState('');
-  const [age, setAge] = useState('');
+  // const [firstName, setFirstName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [age, setAge] = useState('');
+  const [person, setPerson] = useState({firstName:'', email:'', age:''});
   const [people, setPeople] = useState([]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (firstName && email) {
-      const person = { id: new Date().getTime().toString(), firstName, email };
-      console.log(person);
-      setPeople((people) => {
-        return [...people, person];
-      });
-      setFirstName('');
-      setEmail('');
-    } else {
-      console.log('empty values');
-    }
-  };
+ 
   return (
     <>
       <article>
@@ -36,7 +24,7 @@ const ControlledInputs = () => {
               type='text'
               id='firstName'
               name='firstName'
-              value={firstName}
+              value={person.firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
@@ -46,7 +34,7 @@ const ControlledInputs = () => {
               type='text'
               id='email'
               name='email'
-              value={email}
+              value={person.email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -56,7 +44,7 @@ const ControlledInputs = () => {
               type='text'
               id='age'
               name='age'
-              value={age}
+              value={person.age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
