@@ -50,6 +50,16 @@ const ControlledInputs = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
+          <div className='form-control'>
+            <label htmlFor='age'>Age : </label>
+            <input
+              type='age'
+              id='age'
+              name='age'
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
+            />
+          </div>
           <button type='submit'>add person</button>
         </form>
         {people.map((person, index) => {
