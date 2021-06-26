@@ -43,7 +43,7 @@ const ControlledInputs = () => {
           <div className='form-control'>
             <label htmlFor='email'>Email : </label>
             <input
-              type='email'
+              type='text'
               id='email'
               name='email'
               value={email}
@@ -53,7 +53,7 @@ const ControlledInputs = () => {
           <div className='form-control'>
             <label htmlFor='age'>Age : </label>
             <input
-              type='age'
+              type='text'
               id='age'
               name='age'
               value={age}
