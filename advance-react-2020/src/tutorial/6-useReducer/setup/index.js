@@ -7,7 +7,10 @@ const Index = () => {
   const [people, setPeople] = useState(data);
   const [showModal, setShowModal] = useState(false);
 
-  return <h2>useReducer</h2>;
+  return <>
+  useReducer
+  {showModal && <Modal />}
+  </>;
 };
 
 export default Index;
