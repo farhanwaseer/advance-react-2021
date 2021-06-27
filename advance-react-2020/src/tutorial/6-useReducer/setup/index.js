@@ -16,14 +16,15 @@ const Index = () => {
     <>
       <h2>useReducer</h2>
       {showModal && <Modal />}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='form'>
         <div>
           <input
             type="text"
             value={name}
-            onChange={() => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
+        <button type='submit'>add</button>
       </form>
     </>
   );
