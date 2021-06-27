@@ -5,9 +5,13 @@ import React, { useEffect, useRef } from "react";
 // target DOM nodes/elements
 
 const UseRefBasics = () => {
+const handleSubmit = (e) => {
+e.preventDefault();
+}
+
   return (
     <>
-      <form className="form">
+      <form className="form" onChange={handleSubmit}>
         <div>
           <input type="text" />
           <button type="submit">submit</button>
