@@ -24,7 +24,7 @@ const Index = () => {
   return (
     <>
       <h2>useReducer</h2>
-      {state.isModalOpen && <Modal />}
+      {state.isModalOpen && <Modal modalContant={state.modalContant} />}
       <form onSubmit={handleSubmit} className="form">
         <div>
           <input
