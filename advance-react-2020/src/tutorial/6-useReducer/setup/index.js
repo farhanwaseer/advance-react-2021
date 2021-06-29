@@ -7,7 +7,11 @@ const reducer = (state, action) => {
 
 }
 
-const 
+const defaultState = {
+  people:[],
+  isModalOpen: false,
+  modalContant:'hello world'
+}
 
 const Index = () => {
   const [name, setName] = useState("");
