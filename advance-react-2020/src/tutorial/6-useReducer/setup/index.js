@@ -6,7 +6,7 @@ import { data } from "../../../data";
 const reducer = (state, action) => {};
 
 const defaultState = {
-  people: [],
+  people: data,
   isModalOpen: false,
   modalContant: "hello world",
 };
@@ -39,7 +39,7 @@ const Index = () => {
         return (
           <div key={person.id}>
             <h4>
-              {person.name} <p>{person.id}</p>
+              {person.name} 
             </h4>
           </div>
         );
