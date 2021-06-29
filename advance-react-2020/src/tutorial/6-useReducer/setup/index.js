@@ -7,6 +7,8 @@ const reducer = (state, action) => {
 
 }
 
+const 
+
 const Index = () => {
   const [name, setName] = useState("");
   const [state, dispatch] = useReducer(reducer);
