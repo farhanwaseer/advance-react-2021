@@ -3,12 +3,18 @@ import Modal from "./Modal";
 import { data } from "../../../data";
 // reducer function
 
-const reducer = (state, action) => {};
+const reducer = (state, action) => {
+  if(action.type == 'Testing') {
+    return {
+      ...state,people: data,isModalOpen:true,modalContant:'item added'
+    };
+  }
+};
 
 const defaultState = {
-  people: data,
+  people: [],
   isModalOpen: false,
-  modalContant: "hello world",
+  modalContant: "",
 };
 
 const Index = () => {
@@ -17,6 +23,7 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
+      dispatch({type: 'Testing'})
     } else {
     }
   };
