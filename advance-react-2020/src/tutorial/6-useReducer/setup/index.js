@@ -19,18 +19,16 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(name){
-      setShowModal(true);
-      setPeople([...people, {id: new Date().getTime().toString(),name}]);
-      setName('');
+     
     }else{
-      setShowModal(true);
+     
     }
   };
 
   return (
     <>
       <h2>useReducer</h2>
-      {showModal && <Modal />}
+      {state.isModalOpen && <Modal />}
       <form onSubmit={handleSubmit} className='form'>
         <div>
           <input
@@ -41,7 +39,7 @@ const Index = () => {
         </div>
         <button type='submit'>add</button>
       </form>
-    {people.map((person)=> {
+    {state.people.map((person)=> {
       return <div key={person.id}>
         <h4>{person.name} <p>{person.id}</p></h4>
         
