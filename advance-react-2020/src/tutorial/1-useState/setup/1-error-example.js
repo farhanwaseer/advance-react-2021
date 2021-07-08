@@ -4,7 +4,7 @@ const ErrorExample = () => {
   let title = 'title random';
 
   return (
-    <h2>useState error example</h2>
+    <h2>{title}</h2>
   );
 };
 
