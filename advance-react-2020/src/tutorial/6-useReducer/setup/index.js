@@ -10,8 +10,13 @@ const Index = () => {
   
   return (
     <>
-      <h2>useReducer</h2>
-    </>
+   {showModal && <Modal/>}
+   <form onSubmit={handleSubmit}>
+     <div>
+       <input type="text" value />
+     </div>
+   </form>
+   </>
   );
 };
 
