@@ -4,7 +4,7 @@ import { data } from "../../../data";
 // reducer function
 
 const Index = () => {
-  
+  const [name,setName] = useState('');
   const [people,setPeople] = useState(data);
   const [showModal,setShowModal] = useState(false);
   
