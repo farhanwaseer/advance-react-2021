@@ -3,10 +3,10 @@ import Modal from "./Modal";
 import { data } from "../../../data";
 // reducer function
 
-
 const Index = () => {
   return (
-    <><h2>useReducer</h2>
+    <>
+      <h2>useReducer</h2>
     </>
   );
 };
