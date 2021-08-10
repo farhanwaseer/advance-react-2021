@@ -28,10 +28,11 @@ const List = ({ people,removePerson }) => {
   );
 };
 
-const SinglePerson = ({ id, name }) => {
+const SinglePerson = ({ id, name ,removePerson}) => {
   return (
     <div className="item">
-      <h4>single Item</h4>
+      <h4>{name}</h4>
+      <button onClick={()=> removePerson(id)}>remove</button>
     </div>
   );
 };
