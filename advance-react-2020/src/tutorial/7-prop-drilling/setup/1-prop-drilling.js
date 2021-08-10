@@ -6,7 +6,8 @@ import  { data } from '../../../data';
 const PropDrilling = () => {
  const [people,setPeople] = useState(data);
   return <section>
-    <h3></h3>
+    <h3>prop drilling </h3>
+    <List people={people} />
   </section> 
 };
 
