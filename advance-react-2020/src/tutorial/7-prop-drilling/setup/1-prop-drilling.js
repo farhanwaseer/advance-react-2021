@@ -13,26 +13,32 @@ const ContextAPI = () => {
   return (
     <section>
       <h3>prop drilling </h3>
-      <List people={people} removePerson={removePerson}/>
+      <List people={people} removePerson={removePerson} />
     </section>
   );
 };
 
-const List = ({ people,removePerson }) => {
+const List = ({ people, removePerson }) => {
   return (
     <>
       {people.map((person) => {
-        return <SinglePerson key={person.id} {...person} removePerson={removePerson}/>;
+        return (
+          <SinglePerson
+            key={person.id}
+            {...person}
+            removePerson={removePerson}
+          />
+        );
       })}
     </>
   );
 };
 
-const SinglePerson = ({ id, name ,removePerson}) => {
+const SinglePerson = ({ id, name, removePerson }) => {
   return (
     <div className="item">
       <h4>{name}</h4>
-      <button onClick={()=> removePerson(id)}>remove</button>
+      <button onClick={() => removePerson(id)}>remove</button>
     </div>
   );
 };
