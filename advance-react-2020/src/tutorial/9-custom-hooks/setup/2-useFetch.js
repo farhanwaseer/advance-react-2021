@@ -14,4 +14,5 @@ export const useFetch = () => {
   useEffect(() => {
     getProducts();
   }, [url]);
+  return {loading, products}
 };
